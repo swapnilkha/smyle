@@ -12,12 +12,14 @@ const flash = require('connect-flash');
 const validator = require('express-validator');
 const MongoStore = require('connect-mongo')(session);
 
+// require('./seed/product-seeder')
+
 let routes = require('./routes/index');
 let userRoutes = require('./routes/user');
 
 const app = express();
 
-let dbUrl = "mongodb+srv://smyle:smylepass@cluster0-5zyat.mongodb.net/test?retryWrites=true&w=majority";
+let dbUrl = "mongodb+srv://smyle:smylepass@cluster0-5zyat.mongodb.net/smyle";
 mongoose.connect(dbUrl);
 
 require('./config/passport');
