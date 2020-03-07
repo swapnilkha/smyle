@@ -17,7 +17,7 @@ let userRoutes = require('./routes/user');
 
 const app = express();
 
-let dbUrl = "mongodb+srv://smyle:smylepass@cluster0-5zyat.mongodb.net/test?retryWrites=true&w=majority";;
+let dbUrl = "mongodb+srv://smyle:smylepass@cluster0-5zyat.mongodb.net/test?retryWrites=true&w=majority";
 mongoose.connect(dbUrl);
 
 require('./config/passport');
