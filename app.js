@@ -10,7 +10,7 @@ const session = require('express-session');
 const passport = require('passport');
 const flash = require('connect-flash');
 const validator = require('express-validator');
-const MongoStore = require('connect-mongo')(session);
+//const MongoStore = require('connect-mongo')(session);
 
 let routes = require('./routes/index');
 let userRoutes = require('./routes/user');
