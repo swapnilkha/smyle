@@ -1,9 +1,31 @@
+
+<div class="container">
 <div class="jumbotron">
     <div class="header">
-        <h1>Shop your favorite looks</h1>
+        <h1>Shop Outfits</h1>
     </div>
 </div>
-</style>
+</div>
+
+<div class="container">
+            <div class="row">
+              <div class="col-md-4" data-aos="fade-in">
+                  <center>
+                      <button type="button" style="background-color:#c70c16; border-radius: 10px;" class="btn btn-primary hover-green"><h4 style="margin-top:10px;">Casual</h4></button>
+                  </center>
+</div>
+<div class="col-md-4" data-aos="fade-in">
+                  <center>
+                      <button type="button" style="background-color:#c70c16; border-radius: 10px;" class="btn btn-primary hover-green"><h4 style="margin-top:10px;">Work</h4></button>
+                  </center>
+</div>
+<div class="col-md-4" data-aos="fade-in">
+                  <center>
+                      <button type="button" style="background-color:#c70c16; border-radius: 10px;" class="btn btn-primary hover-green"><h4 style="margin-top:10px;">Party</h4></button>
+                  </center>
+</div>
+            </div>
+</div>
 <div class="row">
     <div class="col-sm-6 col-md-4 col-md-offset-4 col-sm-offset-3">
         <div id="success" class="alert alert-success" {{#if noMessages}}hidden{{/if}}>
@@ -32,14 +54,29 @@
         {{/each}}
     </div>
 {{/each}}
+<style>
+    .jumbotron {
+        margin-top: 20px;
+        background: url('https://media.istockphoto.com/photos/clothing-on-hangers-at-the-modern-shopping-mall-picture-id866251200?k=6&m=866251200&s=170667a&w=0&h=RC04ogDp0jyEJmuGPuaWhSjqgkzven6qmcpLhL1SK7E') no-repeat center center fixed;
+        background-size: cover;
+    }
+    .caption h3{
+        font-family: 'Montserrat', sans-serif;
+        font-weight: bold;
+        font-size: 35px;
+    }
+    .row button{
+        width:200px;
+        margin-bottom: 20px;
+        
+    }
+</style>
 
-
-
-<script>
+ {{!-- <script>
     // Use as background image on main page
     let showcase = document.querySelector('body');
     showcase.style.backgroundImage = "url('/images/background2.jpg')";
     showcase.style.backgroundSize = "cover";
     showcase.style.backgroundPosition = "center";
     showcase.style.height = "100%";
-</script>
+</script> --}}
