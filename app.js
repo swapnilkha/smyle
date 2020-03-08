@@ -12,7 +12,7 @@ const flash = require('connect-flash');
 const validator = require('express-validator');
 const MongoStore = require('connect-mongo')(session);
 
-// require('./seed/product-seeder')
+//require('./seed/product-seeder')
 
 let routes = require('./routes/index');
 let userRoutes = require('./routes/user');
