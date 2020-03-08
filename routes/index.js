@@ -19,8 +19,13 @@ router.get('/', function (req, res, next) {
     });
 });
 
+
 router.get('/about', function (req, res, next) {
-  return res.render('shop/about', {products: null});
+    return res.render('shop/about');
+});
+
+router.get('/home_page', function (req, res, next) {
+    return res.render('shop/home_page');
 });
 
 router.get('/add-to-cart/:id', function(req, res, next) {
