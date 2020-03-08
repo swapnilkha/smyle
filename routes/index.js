@@ -19,6 +19,10 @@ router.get('/', function (req, res, next) {
     });
 });
 
+router.get('/about', function (req, res, next) {
+    res.render('shop/index', {title: 'Shopping Cart', products: productChunks, successMsg: successMsg, noMessages: !successMsg});
+}
+
 router.get('/add-to-cart/:id', function(req, res, next) {
   let productId = req.params.id;
   let cart = new Cart(req.session.cart ? req.session.cart : {});
