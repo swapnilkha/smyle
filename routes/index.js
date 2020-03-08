@@ -19,6 +19,7 @@ router.get('/', function (req, res, next) {
     });
 });
 
+
 router.get('/about', function (req, res, next) {
     return res.render('shop/about');
 });
