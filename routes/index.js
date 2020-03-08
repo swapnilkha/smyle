@@ -22,7 +22,11 @@ router.get('/', function (req, res, next) {
 
 router.get('/home_page', function (req, res, next) {
   return res.render('shop/home_page', {products: null});
+});
 
+router.get('/survey_land', function (req, res, next) {
+  return res.render('shop/survey_land', {products: null});
+});
 
 router.get('/about', function (req, res, next) {
     return res.render('shop/about');
