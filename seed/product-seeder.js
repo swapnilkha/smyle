@@ -6,7 +6,7 @@ mongoose.connect("mongodb+srv://smyle:smylepass@cluster0-5zyat.mongodb.net/smyle
 
 var products = [
  new Product({
-    imagePath: '/images/image2.jpeg',
+    imagePath:'/images/image3.jpeg' ,
     title: 'Thumbnail label',
     description: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. A consequuntur debitis delectus deserunt dolore dolorem eum expedita, inventore nobis omnis perferendis possimus quas repellat soluta, sunt voluptate, voluptates! Assumenda, nulla?',
     price: 90
