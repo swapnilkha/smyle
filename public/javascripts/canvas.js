@@ -42,7 +42,6 @@ for( var i = squareSize; i <= size - squareSize; i += squareSize) {
   }
 }
 
-// Use as background image on main page
 var showcase = document.querySelector('body');
 showcase.style.background = "url(" + canvas.toDataURL("image/png")+ ")";
 showcase.style.backgroundSize = "cover";
