@@ -1,4 +1,4 @@
- <nav class="navbar navbar-default">
+ <nav class="navbar navbar-default" style = "background-color: #F2E9DB !important;border-width: 0px !important;">
     <div class="container-fluid">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
@@ -17,23 +17,24 @@
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar">
             <li>
-                <a href="/about/">
-                     <i class="fab fa-pagelines" aria-hidden="true"></i> About</a>
+                <a href="/about/"> About</a>
             </li>
             <li>
-                <a href="/">
-                    <i class="fa fa-shopping-bag" aria-hidden="true"></i> Shop</a>
+                <a href="/survey_land/"> survey_land</a>
             </li>
             <li>
-                <a href="/shopping-cart/">
-                    <i class="fa fa-shopping-cart" aria-hidden="true"></i> Shopping Cart
-                    
-                <span class="badge">{{session.cart.totalQty}}</span>
+                <a href="/home_page/"> Smyle</a>
+            </li>
+            <li>
+                <a href="/"> Shop</a>
+            </li>
+            <li>
+                <a href="/shopping-cart/"> Shopping Cart <span class="badge">{{session.cart.totalQty}}</span>
                 </a>
             </li>
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
-                        <i class="fa fa-user" aria-hidden="true"></i>User Management
+                        sign up
                         <span class="caret"></span>
                     </a>
                     <ul class="dropdown-menu">
