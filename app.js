@@ -12,7 +12,7 @@ const flash = require('connect-flash');
 const validator = require('express-validator');
 const MongoStore = require('connect-mongo')(session);
 
-//require('./seed/product-seeder')
+// require('./seed/product-seeder');
 
 let routes = require('./routes/index');
 let userRoutes = require('./routes/user');
@@ -25,6 +25,11 @@ mongoose.connect(dbUrl);
 require('./config/passport');
 // view engine setup
 app.engine('.hbs', expressHbs({defaultLayout: 'layout', extname: '.hbs'}));
+var hbs = expressHbs.create({});
+hbs.handlebars.registerHelper('isdefined', function (value) {
+  return value == "ss";
+});
+
 app.set('view engine', '.hbs');
 
 app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
