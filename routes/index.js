@@ -6,7 +6,6 @@ const Cart = require('../models/cart');
 const Product = require('../models/product');
 const Order = require('../models/order');
 
-/* GET home page. */
 router.get('/', function (req, res, next) {
     let successMsg = req.flash('success')[0];
     Product.find(function (err, docs) {
@@ -100,7 +99,7 @@ router.post('/checkout', isLoggedIn, function(req, res, next) {
   stripe.charges.create({
       amount: cart.totalPrice * 100,
       currency: "usd",
-      source: req.body.stripeToken, // obtained with Stripe.js
+      source: req.body.stripeToken, 
       description: "Test Charge"
   }, function(err, charge) {
       if (err) {
