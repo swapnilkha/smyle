@@ -19,11 +19,7 @@ router.get('/', function (req, res, next) {
     });
 });
 
-<<<<<<< Updated upstream
-=======
-<<<<<<< HEAD
-=======
->>>>>>> Stashed changes
+
 router.get('/about', function (req, res, next) {
     return res.render('shop/about');
 });
@@ -32,7 +28,6 @@ router.get('/home_page', function (req, res, next) {
     return res.render('shop/home_page');
 });
 
->>>>>>> e9479f843560a49b5e885cdee425efe9456ad225
 router.get('/add-to-cart/:id', function(req, res, next) {
   let productId = req.params.id;
   let cart = new Cart(req.session.cart ? req.session.cart : {});
