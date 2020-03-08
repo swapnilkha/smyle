@@ -16,22 +16,14 @@ $form.submit(function (event) {
 });
 
 function stripeResponseHandler(status, response) {
-    if (response.error) { // Problem!
-
-        // Show the errors on the form
+    if (response.error) { 
         $('#charge-error').text(response.error.message);
         $('#charge-error').removeClass('hidden');
-        $form.find('button').prop('disabled', false); // Re-enable submission
+        $form.find('button').prop('disabled', false); 
 
-    } else { // Token was created!
-
-        // Get the token ID:
+    } else { 
         let token = response.id;
-
-        // Insert the token into the form so it gets submitted to the server:
         $form.append($('<input type="hidden" name="stripeToken" />').val(token));
-
-        // Submit the form:
         $form.get(0).submit();
 
     }
@@ -59,12 +51,11 @@ let w = 160;
 let l = size;
   
 for(let i=0; i <= size; i++) {
-context.fillStyle = getRndColor();
-context.fillRect(x,y,w,l);
-x+=w;
+    context.fillStyle = getRndColor();
+    context.fillRect(x,y,w,l);
+    x+=w;
 }
 
-// Use as background image on main page
 var showcase = document.querySelector('body');
 showcase.style.background = "url(" + canvas.toDataURL("image/png")+ ")";
 showcase.style.backgroundSize = "cover";
