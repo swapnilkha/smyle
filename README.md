@@ -1,18 +1,7 @@
-# shopping-cart
+Smyle is a sustainble e-commerce platform that partners with independent sustainable labels like ABLE, Everlane and Reformation to provide complete outfits for different occasions for the consumer to buy. This solves the pain of hunting through various, hard to find platforms to form complete looks. Additionally, everytime a shopper buys a bundle/outfit, our website shows them the impact that purchase has on the environment. This allows the shopper to understand their contribution to saving the planet and hopefully makes them return to make more purchases.
 
-This is a shopping cart app with user authentication based on the Academind YouTube series NodeJS / Express / MongoDB - Build a Shopping Cart by Academind https://www.youtube.com/watch?v=-3vvxn78MH4&list=PL55RiY5tL51rajp7Xr_zk-fCFtzdlGKUp&index=2
 
-    Node.js
-    Express
-    Express Messages, Session, Connect Flash & Validation
-    MongoDB & Mongoose
-    Bootstrap
-    Passport.js Authentication
-    BCrypt Hashing
-    Stripe online payment processing
 
-Version
-1.0.0
 
 Install the dependencies
 
